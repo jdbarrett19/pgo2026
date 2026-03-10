@@ -1,0 +1,60 @@
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@400;900&display=swap" rel="stylesheet">
+
+<style>
+  body { background-color: #021a11; font-family: 'Inter', sans-serif; }
+  .masters-green { background-color: #006747; }
+  .pgo-gold { color: #FFD200; }
+  .serif { font-family: 'Playfair Display', serif; }
+</style>
+
+<div class="min-h-screen flex flex-col items-center justify-center relative overflow-hidden">
+  
+  <div class="absolute inset-0 opacity-20">
+    <div class="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-emerald-600 rounded-full blur-[120px]"></div>
+    <div class="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-yellow-600 rounded-full blur-[120px]"></div>
+  </div>
+
+  <nav class="absolute top-0 w-full p-8 flex justify-between items-center z-10">
+    <div class="text-white font-black tracking-tighter text-2xl italic">PGO<span class="pgo-gold">.2026</span></div>
+    <div class="space-x-8 text-xs uppercase tracking-[0.3em] text-zinc-400 font-bold">
+      <a href="#" class="hover:text-white transition">The Field</a>
+      <a href="#" class="hover:text-white transition">Champions</a>
+      <a href="#" class="hover:text-white transition">The Gallery</a>
+      <a href="#" class="hover:text-white transition text-yellow-500 border border-yellow-500/30 px-4 py-2 rounded-full">Stats</a>
+    </div>
+  </nav>
+
+  <div class="relative z-10 text-center px-4">
+    <p class="text-emerald-400 uppercase tracking-[0.5em] text-[10px] font-black mb-4">Bryant University Alumni Association Presents</p>
+    
+    <h1 class="serif text-white text-6xl md:text-8xl italic mb-6">
+      The Papa Gino's <span class="pgo-gold block not-italic mt-2">Open 2026</span>
+    </h1>
+    
+    <div class="flex items-center justify-center space-x-4 mb-12">
+      <div class="h-[1px] w-12 bg-zinc-700"></div>
+      <p class="text-zinc-400 font-light text-sm tracking-widest uppercase">Est. 2014 • Kingston, MA</p>
+      <div class="h-[1px] w-12 bg-zinc-700"></div>
+    </div>
+
+    <div class="inline-flex flex-col md:flex-row gap-4">
+      <button class="masters-green text-white px-10 py-4 font-bold uppercase tracking-widest rounded-sm hover:brightness-110 transition-all shadow-[0_0_30px_rgba(0,103,71,0.3)]">
+        View the 2026 Field
+      </button>
+      <button class="bg-transparent border border-zinc-700 text-zinc-300 px-10 py-4 font-bold uppercase tracking-widest rounded-sm hover:bg-white hover:text-black transition-all">
+        2025 Highlights
+      </button>
+    </div>
+  </div>
+
+  <div class="absolute bottom-0 w-full bg-zinc-900/80 backdrop-blur-md border-t border-emerald-900/30 py-3">
+    <div class="flex items-center">
+      <div class="bg-yellow-500 text-black px-4 py-1 text-xs font-black uppercase italic ml-4">LATEST NEWS</div>
+      <marquee class="text-white text-sm font-medium uppercase tracking-wider ml-4">
+        BREAKING: Barrett seen practicing at Kingston links... Rumors of a 400-yard drive confirmed... Vegas odds favor the 12-man Bryant field...
+      </marquee>
+    </div>
+  </div>
+
+</div>
